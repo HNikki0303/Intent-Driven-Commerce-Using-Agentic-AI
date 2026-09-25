@@ -90,7 +90,7 @@ const productSchema = new mongoose.Schema(
 
     embedding: {
     type: [Number],
-    select: false,
+    select: false,//intially not fetched whenever done a find or findone operation , explicit selection is required using .select('+embedding')
     default: [],
   },
 
